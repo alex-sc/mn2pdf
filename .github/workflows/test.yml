@@ -65,4 +65,5 @@ jobs:
 
       - run: |
           docker run -d -p 8080:8080 -v ./target:/home/folder verapdf/rest:latest
+          sleep 5
           curl -F "url=file:///home/folder/G.191.pdf" localhost:8080/api/validate/url/A-3A
