@@ -68,9 +68,6 @@ public class mn2pdfTests {
     @Rule
     public final SystemErrRule systemErrRule = new SystemErrRule().enableLog();
 
-    @Rule
-    public final EnvironmentVariables envVarRule = new EnvironmentVariables();
-
     @Rule public TestName name = new TestName();
     
     @BeforeClass
